@@ -25,25 +25,13 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+    
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>John Kirkpatrick's Website</title>
   </head>
 
   <body>
@@ -78,6 +66,9 @@
               >
             </li>
             <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#personal">Personal</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#contact"
                 >Contact</a
               >
@@ -95,6 +86,7 @@
       >
       <!-- Set Photo Here -->
         <img
+          src="images/pfp.jpeg"
           style="height: 150px; width: 150px"
           class="rounded-circle"
           draggable="false"
@@ -104,7 +96,7 @@
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
+          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm John Kirkpatrick 
           <span id="name"></span>!
         </h4>
       </div>
@@ -124,35 +116,10 @@
         </div>
         <div class="col text-center">
           <img
-            src="images/angular.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Angular"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/typescript.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="TypeScript"
-          />
-        </div>
-
-        <div class="col text-center">
-          <img
             src="images/csharp.jpg"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="C#"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
           />
         </div>
         <div class="col text-center">
@@ -180,14 +147,6 @@
             title="Microsoft SQL Server"
           />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/mongodb.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="MongoDB"
-          />
-        </div>
       </div>
 
       <div class="row mt-3 mt-lg-5 next">
@@ -212,45 +171,43 @@
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5>Sales Management System</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+          I created a Sales Management System for my term project in my Component Based Software Design course with my goals aimed at 
+          streamlining sales operations for a fictional company. 
+          Through a combination of database management, programming in C#, and the creation of user-friendly 
+          interfaces using Windows Forms, the proposal outlines a system designed to enhance productivity 
+          and organization within sales teams. Key components include the management of client information, 
+          scheduling of appointments, and tracking of performance metrics. By emphasizing user-friendly interfaces and intuitive functionalities 
+          the project aims to provide a seamless experience for users while effectively managing sales-related tasks. 
+          Overall, this initiative represents a practical application of theoretical concepts in a real-world context.
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5>Formula 1 Racing Client-Side Coding</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
+          Over the course of a semester I was tasked in creating and designing a website with a theme designed around a personal interest.
+          I was tasked with implementing HTML
         </p>
+        <a href="https://cis-linux2.temple.edu/tomcat10/fa23_3344_tun34826/index.html#/">Formula 1 Racing Statistics</a>
+        
       </div>
       <div class="row w-100">
-        <h5>Query Dating Site</h5>
+        <h5>Temple Capstone Project Storage Platform</h5>
       </div>
       <div class="row w-100">
         <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
+          Myself and three other classmates were tasked with developing a comprehensive application for Temple University's CIS Department to effectively manage and track 
+          projects undertaken in Capstone 1-2 courses at Temple University. Currently, the CIS Department relies on platforms like Google Drive, 
+          GitHub, and Canvas, which lack integration and organization between eachother. The proposed system seeks to streamline project documentation, 
+          code storage, and project status tracking. System goals include categorizing projects by status, semester, and team, 
+          implementing role-based access controls, and facilitating audit logging. Users, including students and administrators, 
+          will have tailored permissions for project management. Expected benefits include improved project efficiency, organization, and collaboration. 
+          The project timeline spans analysis, design, build, and implementation phases across two semesters.
         </p>
       </div>
       <div class="row mt-3 next">
@@ -323,8 +280,9 @@
         >
           <h5 class="m-0">Database Management Systems</h5>
         </a>
+        
         <div class="row mt-5 next justify-content-center align-items-center">
-          <a href="#contact" class="text-center"
+          <a href="#personal" class="text-center"
             ><iconify-icon
               icon="material-symbols:arrow-circle-down"
               class="arrow-next"
@@ -333,6 +291,64 @@
         </div>
       </div>
     </div>
+
+
+    <div
+      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+      id="personal"
+    >
+      <div class="row mx-auto">
+        <h4 class="h1 font-weight-bold mx-auto text-center">Personal</h4>
+      </div>
+      <div class="row mx-auto">
+        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+          A little about me!
+        </h5>
+      </div>
+      <div class="row w-100 mb-4">
+        <p class="text-justify">
+          I am currently a senior at Temple Univeristy in Philadelphia, PA with plans on gradutating in the fall of 2024. 
+          Outside of school, my interests include Philly sports and also reading science fiction novels such as Dune. I am also
+          a fan of traveling. Over spring break last year I vistied my girlfriend studying abroad in Denmark and we went to Florence, Italy. 
+          I am very excited to conclude my studies at Temple and begin my time in the professional world.
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <img
+            src="images/eagles.jpeg"
+            style="height: 500px; width: auto;"
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="Philadelphia Eagles Game"
+          />
+        
+          <img
+            src="images/italy2.jpeg"
+            style="height: 500px; width: auto;"
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="Trip to Italy"
+          />
+        </div>
+        
+
+        
+        
+      </div>
+     
+      
+
+
+      <div class="row mt-5 next justify-content-center align-items-center">
+        <a href="#contact" class="text-center"
+          ><iconify-icon
+            icon="material-symbols:arrow-circle-down"
+            class="arrow-next"
+          ></iconify-icon
+        ></a>
+      </div>
+    
+
     <div
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
       id="contact"
@@ -348,7 +364,7 @@
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:johnkirkpatrick321@gmail.com" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -358,7 +374,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="www.linkedin.com/in/john-kirkpatrick-a92248221" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -368,7 +384,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/johnkirk123" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
@@ -392,6 +408,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <script>
       const tooltipTriggerList = document.querySelectorAll(
